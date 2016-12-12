@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Eur-Lex</title>
+
+        <!-- Bootstrap -->
+        <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="./bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- bootstrap-multiselect -->
+        <link href="./bower_components/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" rel="stylesheet">
+
+        <!-- Custom Style -->
+        <link href="./assets/css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+    </head>
+    <body>
+        <header>
+            <section class="brand-bar">
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="#" title="About EUR-Lex">About EUR-Lex</a></li>
+                        <li><a href="#" title="Site map">Site map</a></li>
+                        <li><a href="#" title="A-Z">A-Z</a></li>
+                        <li><a href="#" title="FAQ">FAQ</a></li>
+                        <li><a href="#" title="Help">Help</a></li>
+                        <li><a href="#" title="Links">Links</a></li>
+                        <li><a href="#" title="Legal notice">Legal notice</a></li>
+                        <li><a href="#" title="Cookies">Cookies</a></li>
+                        <li><a href="#" title="Contact">Contact</a></li>
+                        <li>
+                            <select class="form-control input-sm lang">
+                                <option>English (EN)</option>
+                                <option>Français (fr)</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>          
+            </section>
+
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <figure class="brand">
+                                <img src="./assets/img/logo.png" alt="Access to European Union law"/>
+                                <figcaption>Access to European Union law</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="index.html">Home</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Official Journal <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" title="Direct access to the Official Journal">
+                                            Direct access to the Official Journal
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Legally binding print editions">
+                                            Legally binding print editions
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Special edition">
+                                            Special edition
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Direct access to the Official Journal">
+                                            Direct access to the Official Journal
+                                        </a>
+                                    </li>                   
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EU law and related documents <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" title="Treaties">
+                                            Treaties
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="EU Legislation">
+                                            EU Legislation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Consolidated legislation">
+                                            Consolidated legislation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="EFTA documents">
+                                            EFTA documents
+                                        </a>
+                                    </li>    
+                                    <li>
+                                        <a href="#" title="EU Preparatory acts">
+                                            EU Preparatory acts
+                                        </a>
+                                    </li>  
+                                    <li>
+                                        <a href="#" title="EU case law">
+                                            EU case law
+                                        </a>
+                                    </li>   
+                                    <li>
+                                        <a href="#" title="Parliamentary questions">
+                                            Parliamentary questions
+                                        </a>
+                                    </li>  
+                                    <li>
+                                        <a href="#" title="International agreements">
+                                            International agreements
+                                        </a>
+                                    </li>                
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">National law <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" title="N-Lex">
+                                            N-Lex
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="National transposition measures">
+                                            National transposition measures
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="National case-law">
+                                            National case-law
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="EFTA documents">
+                                            JURE
+                                        </a>
+                                    </li>    
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Legislative procedures <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" title="Search in legislative procedures">
+                                            Search in legislative procedures
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Recently published">
+                                            Recently published
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" title="Directories">
+                                            Directories
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Institutions and bodies">
+                                            Institutions and bodies
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Summaries of EU Legislation">
+                                            Summaries of EU Legislation
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="#" title="EuroVoc">
+                                            EuroVoc
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="#">EUROPA</a></li>
+                    <li><a href="#">EU law and publications</a></li>
+                    <li><a href="#">EUR-Lex</a></li>
+                    <li class="active">Advanced search</li>
+                </ol>
+
+                <div class="row">
+                    <div class="col-md-9">
+                        <section class="adv-panel">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="title">Advanced search
+                                        <span class="pull-right">
+                                            <a href="index.html" class="btn btn-primary btn-xs"><i class="fa fa-search"></i> Back to Quick Search</a>
+                                        </span>
+                                    </h4>    
+                                </div>
+                                <div class="panel-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="collection">Collection</label>
+                                                    <select class="form-control" multiple="multiple" name="collection" id="collection">
+                                                        <option value="">--Choose--</option>
+                                                        <option>Treaties</option>    
+                                                        <option>International agreements</option>
+                                                        <option>EU Legislation</option> 
+                                                        <option>EFTA documents</option> 
+                                                        <option>Consolidated legislation</option>
+                                                        <option>EU Preparatory acts</option>    
+                                                        <option>EU case law</option>    
+                                                        <option>Parliamentary questions</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="0">
+                                                            Exclude consolidated versions
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="1">
+                                                            Exclude corrigenda
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 text-right">
+                                                <div class="actions">
+                                                    <button class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                                                    <button class="btn btn-danger"><i class="fa fa-times"></i> Clear</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="title">All Collections
+
+                                        <span class="pull-right">
+                                            <a href="#" class="btn btn-default btn-xs closeall"> Collapse All</a>
+                                            <a href="#" class="btn btn-default btn-xs openall"> Expand All</a>                                             
+                                        </span>
+                                    </h4>
+                                </div>
+                                <div class="panel-body">
+                                    <!-- Begin Callapse -->
+
+                                    <div class="panel-group" id="accordion">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                        <i class="fa fa-angle-down"></i> Text search
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse in">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <div class="form-group">
+                                                                <label for="text" data-toggle="tooltip" data-placement="top" title="Search all of these terms."> <i class="fa fa-info-circle"></i> <span class="btn btn-default btn-xs">Search</span> Find results containing</label>
+                                                                <span class="pull-right">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" id="title" value="1" checked=""> In title
+                                                                    </label>
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" id="text" value="2" checked=""> In text
+                                                                    </label>
+                                                                </span>
+                                                                <textarea class="form-control" placeholder="Search text"></textarea>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="form-group">
+                                                                <label for="text" data-toggle="tooltip" data-placement="top" title="Add any extra words you'd like to search for. Your search results will then include every document that contains your main search terms or at least one of these additional words.
+                                                                       ">  <i class="fa fa-info-circle"></i> <span class="btn btn-default btn-xs">OR</span> Add results containing</label>
+                                                                <span class="pull-right">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" id="title" value="1" checked=""> In title
+                                                                    </label>
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" id="text" value="2" checked=""> In text
+                                                                    </label>
+                                                                </span>
+                                                                <textarea class="form-control" placeholder="Search text"></textarea>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="form-group">
+                                                                <label for="text" data-toggle="tooltip" data-placement="top" title="Specify any words you'd like to exclude. Your search results will then include every document that contains your main search terms but doesn't contain any of these words."> <i class="fa fa-info-circle"></i> <span class="btn btn-default btn-xs">AND</span> Remove results containing</label>
+                                                                <span class="pull-right">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" id="title" value="1" checked=""> In title
+                                                                    </label>
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" id="text" value="2" checked=""> In text
+                                                                    </label>
+                                                                </span>
+                                                                <textarea class="form-control" placeholder="Search text"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 search-hint">
+                                                            <i>Search hints:</i>
+                                                            <ul>
+                                                                <li>Implementing regulation = Implementing <b>AND</b> regulation</li>
+                                                                <li>"" exact phrase search</li>
+                                                                <li>* replace 0 to n characters</li>
+                                                                <li>? replace a single character</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                        <i class="fa fa-angle-down"></i> Document reference
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <div class="form-group">
+                                                                <label for="Year">Year</label>
+                                                                <input type="text" class="form-control" id="Year" placeholder="YYYY">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group">
+                                                                <label for="Number">Number</label>
+                                                                <input type="text" class="form-control" id="Number" placeholder="Number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="Type">Type</label>
+
+                                                                <ul class="option-list">
+                                                                    <li>
+                                                                        <input type="radio" name="option" id="option" value="All"> All
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="option" id="option" value="Regulation"> Regulation
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="option" id="option" value="Directive"> Directive
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="option" id="option" value="Decision"> Decision
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="option" id="option" value="EU court case"> EU court case
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="option" id="option" value="COM and JOIN documents"> COM and JOIN documents
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="option" id="option" value="SEC or SWD documents"> SEC or SWD documents
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="clearfix"></div>
+                                                            <button class="btn btn-default search-btn"><i class="fa fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                        <i class="fa fa-angle-down"></i>  Author of the document
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="The institution or person that produced the document(s) in the field/subfield you're searching."><i class="fa fa-info-circle"></i> Author</label>
+                                                                <select class="form-control" id="author">
+                                                                    <option title="All" value="ALL" selected="selected">All</option><option title="Committee of the Regions" value="regionCommitee">Committee of the Regions</option><option title="Council of the European Union" value="council">Council of the European Union</option><option title="Court of Auditors" value="auditors">Court of Auditors</option><option title="Court of Justice of the European Union" value="justice">Court of Justice of the European Union</option><option title="European Central Bank" value="cb">European Central Bank</option><option title="European Commission" value="commission">European Commission</option><option title="European Council" value="euCouncil">European Council</option><option title="European Economic and Social Committee" value="ecoCommitee">European Economic and Social Committee</option><option title="European Parliament" value="ep">European Parliament</option><option title="National Courts of Justice" value="nationalCourt">National Courts of Justice</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="The institution or person that produced the document(s) in the field/subfield you're searching."><i class="fa fa-info-circle"></i> Author</label>
+                                                                <input type="text" class="form-control" id="other" placeholder="If the author is not listed in the dropdown menu, enter it here. You can enter names of individuals, e.g. a judge, MEP, rapporteur etc." disabled="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <button class="btn btn-default search-btn"><i class="fa fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                        <i class="fa fa-angle-down"></i> Search by Celex number
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFour" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="Unique identifier of a document on EUR-Lex (e.g. 32006L0121). You can also enter partial numbers, replacing the missing characters with wildcards: * for multiple characters, ? for a single character. More about Celex numbers."><i class="fa fa-info-circle"></i> CELEX number</label>
+                                                                <input type="text" class="form-control" placeholder="CELEX number"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                                        <i class="fa fa-angle-down"></i> Search by date
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFive" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="Specify date type – then pick either one date (in format 14/05/2012) or a range (from 01/01/2011 to 31/12/2011). You can use the calendar or enter your date directly."><i class="fa fa-info-circle"></i> Type of date</label>
+                                                                <select class="form-control">
+                                                                    <option title="All dates" value="ALL" selected="selected">All dates</option><option title="Date of document" value="DD">Date of document</option><option title="Date of publication" value="PD">Date of publication</option><option title="Date of effect" value="IF">Date of effect</option><option title="Date of end of validity" value="EV">Date of end of validity</option><option title="Date of notification" value="NF">Date of notification</option><option title="Date of signature" value="SG">Date of signature</option><option title="Date of transposition" value="TP">Date of transposition</option><option title="Date lodged" value="LO">Date lodged</option><option title="Delivery date" value="DH">Delivery date</option><option title="Date of deadline" value="DL">Date of deadline</option><option title="Reply date" value="RP">Reply date</option><option title="Date of vote" value="VO">Date of vote</option><option title="Date of debate" value="DB">Date of debate</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label><input type="radio" value="0" name="dates"/>  Specific Date</label>
+                                                                <input type="date" class="form-control"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label><input type="radio" value="0" name="dates"/>  Date range</label>
+                                                                <input type="date" class="form-control"/> 
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>&nbsp;</label>
+                                                                <input type="date" class="form-control"/> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                                        <i class="fa fa-angle-down"></i> Published in the Official Journal
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseSix" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="Each series has a different type of content. The series is denoted by a letter, e.g. the L in OJ L 28, the C in OJ C 30."><i class="fa fa-info-circle"></i> OJ series</label>
+                                                                <select class="form-control">
+                                                                    <option title="All" value="ALL">All</option><option title="A (1952 – 4/1958)" value="oj-a">A (1952 – 4/1958)</option><option title="C (Information and Notices)" value="oj-c">C (Information and Notices)</option><option title="CA - supplement A" value="oj-ca">CA - supplement A</option><option title="CE - supplement E" value="oj-ce">CE - supplement E</option><option title="CI - supplement I" value="oj-ci">CI - supplement I</option><option title="L (Legislation)" value="oj-l">L (Legislation)</option><option title="LI - supplement I" value="oj-li">LI - supplement I</option><option title="LM (editions in Maltese)" value="oj-lm">LM (editions in Maltese)</option><option title="P (5/1958 -1967)" value="oj-p">P (5/1958 -1967)</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="Number of the Official Journal (e.g. in OJ L 28, the number is 28). For numbers that include a letter (e.g. OJ C 30A), do NOT include the letter in this field (simply enter 30)."><i class="fa fa-info-circle"></i> Number</label>
+                                                                <input type="text" class="form-control" placeholder="Number" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="Enter all 4 digits."><i class="fa fa-info-circle"></i> Year</label>
+                                                                <input type="text" class="form-control" placeholder="Year" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="The OJ page on which the document starts."><i class="fa fa-info-circle"></i> Initial page</label>
+                                                                <input type="text" class="form-control" placeholder="Initial page" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                                                        <i class="fa fa-angle-down"></i> Theme
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseSeven" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="Narrow your search further by entering one or more terms – in any language – from our official thesaurus, using a semicolon (;) to separate terms. Or click the plus sign to browse and select one or more terms."><i class="fa fa-info-circle"></i> EuroVoc thesaurus</label>
+                                                                <input type="text" class="form-control" placeholder="EuroVoc thesaurus" />
+                                                                <span class="help-block"><input type="checkbox" /> Include sub-levels of selected narrow terms</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <button type="button" class="btn btn-default search-btn">Add</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                                                        <i class="fa fa-angle-down"></i> Documents related to a legislative procedure
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseEight" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="Enter all 4 digits."><i class="fa fa-info-circle"></i> Year</label>
+                                                                <input type="text" class="form-control" placeholder="Year" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="Number of the legislative procedure (e.g. in 2005/0042/COD, the number is 42, year is 2005, type is COD)."><i class="fa fa-info-circle"></i> Number</label>
+                                                                <input type="text" class="form-control" placeholder="Number" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="author"  data-toggle="tooltip" data-placement="top" title="Type of legislative procedure."><i class="fa fa-info-circle"></i> Type of legislative procedure.</label>
+                                                                <select class="form-control">
+                                                                    <option title="All" value="ALL" selected="selected">All</option><option title="Agreement (ACC)" value="ACC">Agreement (ACC)</option><option title="Assent procedure (AVC)" value="AVC">Assent procedure (AVC)</option><option title="Consultation of the Court of Auditors (CNC)" value="CNC">Consultation of the Court of Auditors (CNC)</option><option title="Consultation of the European Central Bank (CNB)" value="CNB">Consultation of the European Central Bank (CNB)</option><option title="Cooperation procedure (SYN)" value="SYN">Cooperation procedure (SYN)</option><option title="Non-legislative procedure (NLE)" value="NLE">Non-legislative procedure (NLE)</option><option title="Ordinary legislative procedure (COD)" value="OLP">Ordinary legislative procedure (COD)</option><option title="Social protocol (PRT)" value="PRT">Social protocol (PRT)</option><option title="Special legislative procedure – EP consent required (APP)" value="APP">Special legislative procedure – EP consent required (APP)</option><option title="Special legislative procedure – EP consulted (CNS)" value="SLP">Special legislative procedure – EP consulted (CNS)</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- End Callapse -->
+                                </div>
+                            </div>
+                        </section>
+
+
+                    </div>
+                    <div class="col-md-3">
+                        <aside>
+                            <ul class="list-group side-menu">
+                                <li class="list-group-item"><h4 class="title">My EUR-Lex</h4></li>
+                                <li class="list-group-item">
+                                    <a href="#">
+                                        <i class="fa fa-user-circle"></i> Welcome... <b>nbiradus</b>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">
+                                        <i class="fa fa-sign-out"></i> Logout
+                                    </a>
+                                </li> 
+                                <li class="list-group-item">
+                                    <a href="#">
+                                        <i class="fa fa-gear"></i> Preferences
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">0</span>
+                                    <a href="myqueries.html">                    
+                                        <i class="fa fa-search-plus"></i> My saved searches
+                                    </a>
+                                </li> 
+                                <li class="list-group-item">
+                                    <span class="badge">4</span>
+                                    <a href="myqueries.html">                    
+                                        <i class="fa fa-search"></i> My recent searches
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">2</span>
+                                    <a href="#">                    
+                                        <i class="fa fa-list"></i> My items
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">6</span>
+                                    <a href="#">                    
+                                        <i class="fa fa-rss"></i> My RSS feeds
+                                    </a>
+                                </li>
+                            </ul>
+
+
+                            <ul class="list-group side-menu">
+                                <li class="list-group-item">
+                                    <a href="#">
+                                        <i class="fa fa-rss"></i> Predefined RSS feeds
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">
+                                        <i class="fa fa-server"></i> Webservice registration
+                                    </a>
+                                </li> 
+                                <li class="list-group-item">
+                                    <a href="#">
+                                        <i class="fa fa-internet-explorer"></i> Online tutorials
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">
+                                        <i class="fa fa-line-chart"></i> Statistics
+                                    </a>
+                                </li> 
+                                <li class="list-group-item">
+                                    <a href="#">
+                                        <i class="fa fa-envelope"></i> We'd like to hear from you
+                                    </a>
+                                </li>
+                            </ul>
+
+
+                            <ul class="list-group side-menu">
+                                <li class="list-group-item"><h4 class="title">Quick links</h4></li>
+                                <li class="list-group-item">
+                                    <a href="#">How to link to us</a>
+                                </li> 
+                                <li class="list-group-item">
+                                    <a href="#">Types of documents in EUR-Lex</a>
+                                </li> 
+                                <li class="list-group-item">
+                                    <a href="#">Summaries of EU Legislation</a>
+                                </li> 
+                                <li class="list-group-item">
+                                    <a href="#">EU legislation on statistics</a>
+                                </li> 
+                                <li class="list-group-item">
+                                    <a href="#">Budget</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Legislative drafting guide</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Latest developments on EUR-Lex</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Newsletter</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">News</a>
+                                </li>
+                            </ul>
+
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6 fo-item">
+                        <h4 class="title">Other sites</h4>
+                        <ul class="fo-list">
+                            <li><a href="#">EU Bookshop</a></li>
+                            <li><a href="#">EU Open Data Portal</a></li>
+                            <li><a href="#">Ted</a></li>
+                            <li><a href="#">Whoiswho</a></li>
+                            <li><a href="#">CORDIS</a></li>
+                            <li><a href="#">N-Lex</a></li>
+                            <li><a href="#">EU law and publications</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6 fo-item">
+                        <h4 class="title">Direct access</h4>
+                        <ul class="fo-list">
+                            <li><a href="#">Official Journal</a></li>
+                            <li><a href="#">EU law and related documents</a></li>
+                            <li><a href="#">National law</a></li>
+                            <li><a href="#">Preparatory acts</a></li>
+                            <li><a href="#">More</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6 fo-item">
+                        <h4 class="title">Practical information</h4>
+                        <ul class="fo-list">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">EuroVoc</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6 fo-item">
+                        <h4 class="title">My EUR-Lex</h4>
+                        <ul class="fo-list">
+                            <li><a href="#">Preferences</a></li>
+                            <li><a href="#">My recent searches</a></li>
+                            <li><a href="#">My items</a></li>
+                            <li><a href="#">Preparatory acts</a></li>
+                            <li><a href="#">My RSS feeds</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mini-footer">
+                <ul>
+                    <li><a href="#">About this website</a></li>
+                    <li><a href="#">Legal notice</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Top</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Bootstrap Multiselect -->
+        <script src="./bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>        
+        <!-- Initialize the plugin: -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#collection').multiselect({
+                    buttonWidth: '220px',
+                    enableFiltering: true,
+                    includeSelectAllOption: true,
+                    dropRight: true
+                });
+
+                $('.closeall').click(function () {
+                    $('.panel-collapse.in')
+                            .collapse('hide');
+                });
+                $('.openall').click(function () {
+                    $('.panel-collapse:not(".in")')
+                            .collapse('show');
+                });
+
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                });
+            });
+        </script>
+    </body>
+</html>

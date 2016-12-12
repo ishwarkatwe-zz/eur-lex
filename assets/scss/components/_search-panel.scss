@@ -1,0 +1,140 @@
+/*
+        Search panel
+*/
+
+.search-panel{
+    height:210px;
+    background:url('../img/polygon.png') #0685af;
+    background-position: center;
+
+    position:relative;
+
+    .search{
+        padding:20px;
+
+        .search-options{
+            margin:5px 0px;
+            color:$white;
+
+            a{
+                color:$white;
+                text-decoration:underline;
+            }
+        }
+    }
+}
+
+.search-options{
+    margin-top:-40px;
+    .nav-tabs{
+        li{
+            a{
+                border:none;
+            }
+
+            &.active, &.hover{
+                a{
+                    border:none;
+                }
+            }
+            &:not(.active) {
+                a{
+                    color:$white;
+
+                    &:hover{
+                        color:$blue;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-pane{
+        background:$white;
+        padding:10px 15px;
+
+        .option-list{
+            list-style:none;
+            padding:0px;
+            li{
+                float:left;
+                width:50%;
+            }
+        }
+
+        .search-btn{
+            margin:24px 0px;
+        }
+    }
+}
+
+
+.search_result{
+    background: $white;
+    margin: 15px 0px;
+    padding:10px;
+    h4.title{
+        margin:20px 0px; 
+        position:relative;
+        font-size: 16px;
+        &:after{
+            position: absolute;
+            bottom: -6px;
+            left: 0px;
+            width: 50px;
+            height: 2px;
+            background: $blue;
+            content: "";
+        }
+    }
+
+    select.publish{
+        margin: 15px 0px;
+        float:right;
+        width: 200px;
+    }
+
+    .publish-item{
+    	margin:10px 0px;
+        label{
+            float:left;
+            font-size: 13px;
+        }
+        p{
+            margin-left: 85px;
+            padding: 0px 5px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+}
+
+.adv-panel{
+    .panel{
+        .panel-heading{
+            background: $white;
+            border:none;
+
+            h4.title{
+                margin:10px 0px; 
+                position:relative;
+                font-size: 16px;
+                &:after{
+                    position: absolute;
+                    bottom: -6px;
+                    left: 0px;
+                    width: 50px;
+                    height: 2px;
+                    background: $blue;
+                    content: "";
+                }
+            }
+        }
+        
+        .panel-body{
+            .actions{
+                margin-top: 24px;
+            }
+        }
+    }
+}

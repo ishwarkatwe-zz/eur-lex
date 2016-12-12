@@ -1,0 +1,34 @@
+/*
+    Scss Style Main File
+*/
+/* 
+    Created on : 15 Sep, 2016, 8:20:42 PM
+    Author     : Ishwar Katwe
+*/
+
+//Fonts Open San
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+/*Base*/
+@import "base/_variables.scss";
+@import "base/_global.scss";
+
+//Utils
+@import "utils/_snippets.scss";
+@import "utils/_shadow.scss";
+@import "utils/_animations.scss";
+
+//Layouts
+@import "layouts/_navbar.scss";
+@import "layouts/_footer.scss";
+
+
+//Components
+@import "components/_main-content.scss";
+@import "components/_aside.scss";
+@import "components/_search-panel.scss";
+@import "components/_adv-search.scss";
+@import "components/_my-queries.scss";
+
+
+

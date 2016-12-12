@@ -1,0 +1,28 @@
+/*
+    Search Hint
+*/
+.search-hint{
+    i{
+        padding-left: 0px;
+    }
+    ul{
+        padding-left: 15px;
+        li{
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+}
+
+.option-list{
+    list-style:none;
+    padding:0px;
+    li{
+        float:left;
+        width:50%;
+    }
+}
+
+.search-btn{
+    margin:24px 0px;
+}

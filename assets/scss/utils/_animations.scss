@@ -1,0 +1,33 @@
+/*
+    Animation Effect Mixin Function
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:51:10 PM
+    Author     : Ishwar Katwe
+*/
+@mixin animate($property, $duration:.35s, $delay:0s, $effect:ease)
+{
+    -webkit-transition-timing-function: $effect;
+    -moz-transition-timing-function: $effect;
+    -ms-transition-timing-function: $effect;
+    -o-transition-timing-function: $effect;
+    transition-timing-function: $effect;
+
+    -webkit-transition-duration: $duration;
+    -moz-transition-duration: $duration;
+    -ms-transition-duration: $duration;
+    -o-transition-duration: $duration;
+    transition-duration: $duration;
+
+    -webkit-transition-delay: $delay;
+    -moz-transition-delay: $delay;
+    -ms-transition-delay: $delay;
+    -o-transition-delay: $delay;
+    transition-delay: $delay;
+
+    -webkit-transition-property: $property;
+    -moz-transition-property: $property;
+    -ms-transition-property: $property;
+    -o-transition-property: $property;
+    transition-property: $property;
+}

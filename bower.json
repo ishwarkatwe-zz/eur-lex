@@ -1,0 +1,22 @@
+{
+  "name": "eurlex",
+  "authors": [
+    "Ishwar Katwe <ishwar.katwe0816@gmail.com>"
+  ],
+  "description": "pivot ui ux",
+  "main": "index.html",
+  "keywords": [
+    "ui",
+    "ux"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

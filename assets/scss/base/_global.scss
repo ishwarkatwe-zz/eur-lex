@@ -1,0 +1,21 @@
+/*
+    Global declaration
+*/
+body
+{
+    font-family: $font-primary;
+    background-color: $body-bg;
+    padding: 0px;
+    margin: 0px;
+}
+
+input
+{
+    font-family: $font-primary;
+    font-weight: 200;
+}
+
+
+.text-center{
+    text-align: center;
+}

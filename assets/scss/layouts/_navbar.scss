@@ -1,0 +1,137 @@
+/*
+    NavBar Style
+*/
+
+header
+{
+   .brand-bar{
+   		text-align:right;
+   		padding: 5px 20px;
+   		ul.nav-links
+		{
+		    margin: 0;
+		    padding: 0;
+		    
+		    li
+			{
+			    list-style-type: none;
+			    display: inline;
+
+			    a{
+			    	line-height: 30px;
+    				font-size: 12px;
+    				color: $dark-gray;
+
+    				&:hover{
+    					color:$hover-blue;
+    				}
+			    }
+
+			    .lang{
+			        width: 130px;
+					display: inline;
+			    }
+			}
+
+			li:not(:first-child):before {
+			    content: " | ";
+			}
+		} 
+   }
+
+
+
+   .navbar{
+   		@include respond-to(xs){
+	    	min-height: 50px;	    	
+	    }
+
+	    margin:0px;
+       	min-height: 80px;
+	    border: none;
+	    background: $white;
+
+	    .navbar-header{
+	    	min-height: 80px;
+	    	.navbar-brand{
+    		    padding: 10px 15px;
+		     	figure.brand{
+		   			position:relative;
+		   			img{
+		   				@include respond-to(md){
+		   				    width: 125px;
+    						padding: 10px 0px;
+    					}
+		   			}
+		   			figcaption{
+	   				    position: absolute;
+					    top: 50%;
+					    left: 87px;
+					    min-width: 200px;
+					    font-style: italic;
+					    font-size: 12px;
+					    @include respond-to(md){
+					    	display:none;
+					    }
+		   			}
+		   		}
+	    	}
+		   
+	    }
+
+	    .nav.navbar-nav {
+	    	@include respond-to(xs){
+				margin: 0px;
+			}
+
+		    >li{
+				>a{
+				    padding-top: 10px;
+				    padding-bottom: 10px;
+
+				    @include respond-to(xs){
+				    	line-height: 20px;
+				    }
+				    line-height: 60px;
+				}
+
+				ul.dropdown-menu{
+					li{
+						a{
+					    	line-height: 25px;
+						    font-size: 13px;
+						    min-width: 240px;
+						}
+					}
+				}
+
+				&.open{
+					>a, >a:focus, >a:hover{
+						background-color: $blue;
+    					color: $white;
+					}
+				}
+
+				&.active{
+					a{
+						background-color: $blue;
+    					color: $white;
+					}
+				}
+		    }
+	    }    
+	    
+   }
+
+}
+
+  .breadcrumb{
+   		background:none;
+   		margin: 5px 0px;
+   		li{
+   			font-size: 13px;
+	   		a{
+	   			font-size: 13px;
+	   		}
+   		}
+    }
