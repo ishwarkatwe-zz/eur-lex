@@ -80,6 +80,19 @@ header
 	    }
 
 	    .nav.navbar-nav {
+
+	    	@include respond-to(sm){
+				>li{
+					float:left;
+					width:50%;
+					a{
+						line-height:20px !important;
+					}
+				}
+			}
+
+
+
 	    	@include respond-to(xs){
 				margin: 0px;
 			}

@@ -104,6 +104,12 @@ header .navbar {
           @media only screen and (min-width: 992px) and (max-width: 1199px) {
             header .navbar .navbar-header .navbar-brand figure.brand figcaption {
               display: none; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    header .navbar .nav.navbar-nav > li {
+      float: left;
+      width: 50%; }
+      header .navbar .nav.navbar-nav > li a {
+        line-height: 20px !important; } }
   @media only screen and (max-width: 767px) {
     header .navbar .nav.navbar-nav {
       margin: 0px; } }
