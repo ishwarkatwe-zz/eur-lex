@@ -15,4 +15,6 @@ Quick Search Screen -- http://localhost:8080/index.html
 
 My saved searches -- http://localhost:8080/advsearch.html
 
+![alt tag](https://raw.githubusercontent.com/ishwarkatwe/eur-lex/master/snapshots/advSearch.png)
+
 My saved searches -- http://localhost:8080/myqueries.html
