@@ -13,7 +13,7 @@ Please find below pages after loading template
 
 
 Quick Search Screen -- http://localhost:8080/index.html
-![alt tag](https://raw.githubusercontent.com/ishwarkatwe/eur-lex/master/snapshots/quicksearch.png)
+![alt tag](https://raw.githubusercontent.com/ishwarkatwe/eur-lex/master/snapshots/quicksearch.png){:height="50%" width="50%"}
 
 
 My saved searches -- http://localhost:8080/advsearch.html
